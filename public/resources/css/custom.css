@@ -1,0 +1,245 @@
+
+/*Overall fixes*/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  color: #fff;
+  font-family: AndHeadLine;
+}
+
+@font-face {
+    font-family: AndHeadLine;
+    src: url("../assets/AndHeadlineBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FreightTextPro;
+    src: url("../assets/FreightTextProBook.otf") format("opentype");
+}
+
+h1,h2,h3,h4,h5,button{
+ text-transform:uppercase;
+}
+
+
+#modal-end button, .fullScrMsg button{
+  color:#333;
+}
+
+/*Bootstrap fixes*/
+
+.btn:disabled{
+  opacity: .35;
+}
+
+.btn{
+    border-radius: 0;
+    color:#fff;
+}
+
+.modal-footer .btn{
+  color:#333;
+}
+
+/*Modal adjustments*/
+.question-modal div{
+  color: #fff;
+  border:none;
+  border-radius: 0;
+  align-items: center;
+}
+
+.question-modal .lead{
+  text-align:center;
+}
+
+.question-modal .modal-content{
+  padding: 30px;
+}
+
+.question-modal .modal-footer{
+    justify-content:space-around;
+    align-content: stretch;
+    width:100%;
+}
+
+.question-modal button{
+  padding:0.5rem 2.3rem;
+}
+
+
+/* theme colors*/
+.cBLK{background-color: #000;}
+.c0{background-color: #dc1478;}
+.c1{background-color: #54b23e;}
+.c2{background-color: #0072b5;}
+.c3{background-color: #3e6c35;}
+.c4{background-color: #c88225;}
+.c5{background-color: #f89222;}
+.c6{background-color: #f16121;}
+.c7{background-color: #841731;}
+.c8{background-color: #fcae14;}
+.c9{background-color: #00a4d4;}
+.c10{background-color: #ec3726;}
+.c11{background-color: #ba1c2c;}
+.c12{background-color: #24903f;}
+.c13{background-color: #cd9525;}
+.c14{background-color: #e81929;}
+.c15{background-color: #17305d;}
+.c16{background-color: #014b80;}
+.c17{background-color: #000000;}
+
+
+/* tempfix*/
+.score{
+  color:#333;
+  padding: 1rem 3rem;
+}
+
+.score span, .lead span{
+  color:#dc1478;
+}
+
+#qButtons{
+    padding: 1rem 3rem;
+}
+
+.fullScrMsg h1{
+  font-size:3rem;
+  margin:1rem 0 2rem 0;
+}
+
+.fullScrMsg .row{
+  margin-top:3rem;
+}
+
+.fullScrMsg .row button{
+  margin:1rem 1rem 0 1rem;
+}
+
+.fullScrMsg .container{
+  max-width:720px;
+}
+
+.fullScrMsg {
+background: linear-gradient(315deg, #dc1478, #0072b5, #ba1c2c, #17305d, #3e6c35);
+background-size: 1200% 1200%;
+
+-webkit-animation: AnimationName 20s ease infinite;
+-moz-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.layer1 {
+   margin: 30px;
+   animation: rotate 3s ease-in-out infinite;
+}
+
+.layer2 {
+   animation: rotate 5s ease-in-out infinite;
+}
+
+.layer3 {
+   animation: rotate 7s ease-in-out infinite;
+   animation-direction: alternate-reverse;
+}
+
+@keyframes rotate {
+from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}
+}
+
+.questionContainer{
+  background-color:#fff;
+  color:#333;
+  padding: 3rem;
+}
+
+.questionContainer button{
+  color:#fff;
+  width:80%
+}
+
+.questionContainer h3, .questionContainer p{
+  margin-bottom:1.5rem;
+}
+
+
+.questionContainer{
+  margin-top:10rem;
+}
+
+.questionContainer:first{
+  margin-top: 0;
+}
+
+.vDiv{
+  height:1500px;
+  width:6px;
+  z-index:-99;
+  position:absolute;
+  top:20rem;
+  left:50%;
+  background-color:#fff;
+}
+
+.gameCntrl{
+  position:sticky;
+  bottom:1rem;
+  left:12px;
+  text-align:right;
+  margin-right:1rem;
+}
+
+.gameCntrl .btn-circle{
+  margin-left:0.3rem;
+}
+
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    padding: 11px 0px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+    opacity:0.2;
+}
+
+ol li{
+  font-size:2rem;
+}
+
+ol li:first-child{
+  opacity:1.0;
+  color:#FFD700;
+  animation: blinker 2s ease-in-out infinite;
+}
+
+
+@keyframes blinker {
+  50% { opacity: 0.2; }
+}

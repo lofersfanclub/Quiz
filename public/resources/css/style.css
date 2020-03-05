@@ -1,0 +1,80 @@
+
+@font-face {
+	font-family: "AndHeadline-Bold";
+	src: url("fonts/AndHeadlineBold.eot");
+	/* IE9 Compat Modes */
+	src: url("fonts/AndHeadlineBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("fonts/AndHeadlineBold.otf") format("opentype"), /* Open Type Font */
+	url("fonts/AndHeadlineBold.svg") format("svg"), /* Legacy iOS */
+	url("fonts/AndHeadlineBold.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("fonts/AndHeadlineBold.woff") format("woff"), /* Modern Browsers */
+	url("fonts/AndHeadlineBold.woff2") format("woff2");
+	/* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: FreightTextPro;
+    src: url("fonts/FreightTextProBook.otf") format("opentype");
+}
+
+/* theme colors*/
+.cBLK{background-color: #000;}
+.c0{background-color: #dc1478;}
+.c1{background-color: #54b23e;}
+.c2{background-color: #0072b5;}
+.c3{background-color: #3e6c35;}
+.c4{background-color: #c88225;}
+.c5{background-color: #f89222;}
+.c6{background-color: #f16121;}
+.c7{background-color: #841731;}
+.c8{background-color: #fcae14;}
+.c9{background-color: #00a4d4;}
+.c10{background-color: #ec3726;}
+.c11{background-color: #ba1c2c;}
+.c12{background-color: #24903f;}
+.c13{background-color: #cd9525;}
+.c14{background-color: #e81929;}
+.c15{background-color: #17305d;}
+.c16{background-color: #014b80;}
+.c17{background-color: #000000;}
+
+body{
+    font-family: "AndHeadline-Bold";
+    background-color: #181818;
+}
+
+.logoimg{
+    animation: rotate 3s ease-in-out infinite;
+}
+
+.table{
+    text-align: left;
+}
+
+.name{
+    text-align: right;
+   font-family: "AndHeadline-Bold";
+    font-size: 40px;
+}
+
+.score{
+    text-align: left;
+    margin-left: 1em;
+   font-family: "AndHeadline-Bold";
+   font-size: 40px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
