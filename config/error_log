@@ -1,0 +1,10 @@
+[04-Mar-2020 13:38:09 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/dbjvgrki/public_html/dev/quiz/scoreboard.php on line 17
+[04-Mar-2020 13:39:14 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/dbjvgrki/public_html/dev/quiz/scoreboard.php on line 21
+[04-Mar-2020 13:39:15 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/dbjvgrki/public_html/dev/quiz/scoreboard.php on line 21
+[04-Mar-2020 13:44:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/dbjvgrki/public_html/dev/quiz/add.php on line 48
+[04-Mar-2020 13:45:58 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/dbjvgrki/public_html/dev/quiz/add.php on line 47
+[04-Mar-2020 13:46:43 UTC] PHP Warning:  Use of undefined constant window - assumed 'window' (this will throw an Error in a future version of PHP) in /home/dbjvgrki/public_html/dev/quiz/add.php on line 47
+[04-Mar-2020 13:46:43 UTC] PHP Warning:  Use of undefined constant location - assumed 'location' (this will throw an Error in a future version of PHP) in /home/dbjvgrki/public_html/dev/quiz/add.php on line 47
+[04-Mar-2020 13:46:43 UTC] PHP Warning:  Use of undefined constant href - assumed 'href' (this will throw an Error in a future version of PHP) in /home/dbjvgrki/public_html/dev/quiz/add.php on line 47
+[04-Mar-2020 13:48:09 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/dbjvgrki/public_html/dev/quiz/add.php on line 47
+[04-Mar-2020 13:49:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dbjvgrki/public_html/dev/quiz/add.php:1) in /home/dbjvgrki/public_html/dev/quiz/add.php on line 47
