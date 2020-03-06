@@ -49,6 +49,8 @@ body{
     animation: rotate 3s ease-in-out infinite;
 }
 
+/* Scoreboard CSS */
+
 .table{
     text-align: left;
 }
@@ -66,6 +68,22 @@ body{
    font-size: 40px;
 }
 
+/* Question Card CSS */
+
+#question__logo{
+    width: 200px;
+    height: auto;
+    margin: 2em;
+}
+
+.card-title{
+    font-size: 3em;
+}
+
+.card-text{
+    font-size: 1.5em;
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -75,6 +93,7 @@ body{
         transform: rotate(360deg);
     }
 }
+
 
 
 

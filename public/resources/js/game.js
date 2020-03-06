@@ -9,6 +9,7 @@ startScreen.style.display = 'block';
 gameScreen.style.display = 'none';
 
 var card__header = document.getElementById('card-header');
+var question__logo = document.getElementById('question__logo');
 var question__title = document.getElementById('question__title');
 var question__question = document.getElementById('question__question');
 var choise_a = document.getElementById('choise_a');
@@ -112,6 +113,7 @@ function addOptions(item){
 
     currentQuestion = quizQuestions[item];
     card__header.classList.add("c" + currentQuestion.id);
+    question__logo.src = "resources/img/main-" + currentQuestion.id + ".png"
     question__title.innerHTML = currentQuestion.title;
     question__question.innerHTML = currentQuestion.question;
 

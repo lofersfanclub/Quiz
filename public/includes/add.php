@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Add to scoreboard</title>
-    <script src="/vendors/gsap-public/minified/gsap.min.js"></script>
-    <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css">
+    <script src="../vendors/gsap-public/minified/gsap.min.js"></script>
+    <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../resources/css/style.css">
 
     <script>
