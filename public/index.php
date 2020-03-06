@@ -60,9 +60,9 @@
     <h5 id="question__title" class="card-title">Affordable and clean energy</h5>
     <p id="question__question" class="card-text mt-2">Renewable energy sources are energy sources that do not end in the foreseeable future. One of these sources of energy is the sun which supplies much more energy to the earth than man uses every day. How much more?</p>
     <div id="question__choises" class="mt-2">
-<button id="choise_a" type="button" class="btn btn-lg btn-primary m-1">100 times more</button>
-<button id="choise_b" type="button" class="btn btn-lg btn-primary m-1">1000 times more</button>
-<button id="choise_c" type="button" class="btn btn-lg btn-primary m-1">10 000 times more</button>
+<button id="choise_a" type="button" class="btn btn-primary btn-lg btn-block">100 times more</button>
+<button id="choise_b" type="button" class="btn btn-primary btn-lg btn-block">1000 times more</button>
+<button id="choise_c" type="button" class="btn btn-primary btn-lg btn-block">10 000 times more</button>
     </div>
   </div>
 </div>
