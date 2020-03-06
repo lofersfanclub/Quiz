@@ -130,8 +130,9 @@ function addOptions(item){
 
 function validateChoice(a, b){
     if(a == b){
-               currentScore++;
-             console.log("%cCorrect Answer", "color:green; font-size: 15px");
+            
+        currentScore++;
+        console.log("%cCorrect Answer", "color:green; font-size: 15px");
 
         timeline.to(".card", fadeTime, {
             opacity: 0,

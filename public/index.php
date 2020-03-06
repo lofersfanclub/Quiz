@@ -15,7 +15,7 @@
           <img class="logoimg" src="resources/img/amp_white.png" width="90px">
           <div>
         <button id="start_screen__start_button" class="btn btn-lg btn-primary mt-5 mr-5" onclick="loadQuestions()">NEW GAME</button>
-        <button id="start_screen__start_button" class="btn btn-lg btn-primary mt-5 ml-5" onclick="loadQuestions()">NEW GAME</button>
+        <button id="start_screen__start_button" class="btn btn-lg btn-primary mt-5 ml-5">SCOREBOARD</button>
      </div>
      <!-- PHP SCOREBOARD START -->
      <?php

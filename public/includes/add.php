@@ -48,7 +48,7 @@
             }
             else{
               //error
-              echo "<script type= 'text/javascript'>alert('Error: Data not added to database.');</script>";
+              echo "<script type='text/javascript'>alert('Error: Data not added to database.');</script>";
             }
 
             $dbo = null;
