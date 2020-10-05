@@ -19,7 +19,24 @@ var choise_c = document.getElementById('choise_c');
 var timeline = gsap.timeline({});
 var fadeTime = 0.5;
 
-
+var c0 = '#dc1478';
+var c1 = '#54b23e';
+var c2 = '#0072b5';
+var c3 = '#3e6c35';
+var c4 = "#c88225";
+var c5 = '#f89222';
+var c6 = '#f16121';
+var c7 = '#841731';
+var c8 = '#fcae14';
+var c9 = '#00a4d4';
+var c10 = '#ec3726';
+var c11 = '#ba1c2c';
+var c12 = '#24903f';
+var c13 = '#cd9525';
+var c14 = '#e81929';
+var c15 = '#17305d';
+var c16 = '#014b80';
+var c17 = '#000000';
 
 
 // Load all questions, shuffle questions, pick question, start game.
@@ -63,7 +80,10 @@ function play(gameArray) {
       if (gameArray.length > 0) {
     startScreen.style.display = 'none';
     gameScreen.style.display = 'block';
-    timeline.to(".card", fadeTime, {
+    timeline.set(".card",{
+        backgroundColor: "#fff"
+    }); 
+          timeline.to([".card",  card__header, question__title, question__question, choise_a, choise_b, choise_c], fadeTime, {
                 opacity: 1,
             });
 
@@ -130,21 +150,51 @@ function addOptions(item){
 
 function validateChoice(a, b){
     if(a == b){
-            
         currentScore++;
         console.log("%cCorrect Answer", "color:green; font-size: 15px");
-
+        timeline.to(question__logo, 0.2, {
+            yoyo: true,
+            scale: 1.1,
+            repeat:5
+        });
+        timeline.to([card__header, question__title, question__question, choise_a, choise_b, choise_c], 0.1, {
+            opacity: 0
+        }); 
+        timeline.to(".card", 0.2, {
+            backgroundColor: '#00ff00'
+        }); 
         timeline.to(".card", fadeTime, {
             opacity: 0,
             onComplete: play,
-            onCompleteParams: [gameArray]
+            onCompleteParams: [gameArray],
+            delay:1
         }); 
     }
     else{
        console.log("%cWrong Answer", "color:red; font-size: 15px");
        console.log(currentScore);
-       document.getElementById('score').innerHTML = "Game score: " + currentScore;
-        gameOver();
-        window.location.href = "includes/add.php#" + currentScore;
+        
+       timeline.to(question__logo, 0.2, {
+            yoyo: true,
+            scale: 1.1,
+            repeat: 5
+        });
+        timeline.to([card__header, question__title, question__question, choise_a, choise_b, choise_c], 0.1, {
+            opacity: 0
+        });
+        timeline.to(".card", 0.2, {
+            backgroundColor: '#ff0000'
+        });
+        timeline.to(".card", fadeTime, {
+            opacity: 0,
+            onComplete: endGame,
+            delay: 1
+        }); 
     }
+}
+
+function endGame(){
+    document.getElementById('score').innerHTML = "Game score: " + currentScore;
+    gameOver();
+    window.location.href = "includes/add.php#" + currentScore;
 }
